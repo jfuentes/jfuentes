@@ -2,17 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3. Algoritmos on Computación Heterogénea</title>
-    <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/</link>
+    <link>https://jfuentes.github.io/classes/ch/unit3/</link>
     <description>Recent content in 3. Algoritmos on Computación Heterogénea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jfuentes.github.io/classes/ch/unit3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Patrones Paralelos</title>
+      <link>https://jfuentes.github.io/classes/ch/unit3/patrones/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfuentes.github.io/classes/ch/unit3/patrones/</guid>
+      <description>En esta sesión revisamos los diferentes patrones de diseño para programación de algoritmos paralelos.
+12-patrones_algoritmos.pdf
+  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+    </item>
+    
+    <item>
+      <title>HPC y Biometría (charla invitada)</title>
+      <link>https://jfuentes.github.io/classes/ch/unit3/hpc/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfuentes.github.io/classes/ch/unit3/hpc/</guid>
+      <description>Charla &amp;ldquo;Computación de Alto Rendimiento y Biometría.&amp;rdquo; dada por Dr. Ricardo Barrientos de la Universidad Católica del Maule.
+Resumen: Esta charla comenzará presentando una introducción al área de Computación de Alto Rendimiento y ejemplo de problemas que es capaz de resolver. También, se verá el desarrollo de aplicaciones utilizando GPU (Graphic Processing Unit), así como su arquitectura. Posteriormente, se presentarán prototipos tecnólogicos desarrollados en el Laboratorio LITRP (www.litrp.cl) que tienen relación con distintos métodos biométricos usados en plataformas de hardware de alto rendimiento y en particular en GPU, que permiten el uso de bases de datos de gran tamaño (decenas de millones de datos biométricos)</description>
+    </item>
+    
+    <item>
+      <title>Algoritmos y Aplicaciones</title>
+      <link>https://jfuentes.github.io/classes/ch/unit3/algoritmos/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfuentes.github.io/classes/ch/unit3/algoritmos/</guid>
+      <description>En esta sesión revisamos algunos ejemplos de algoritmos paralelos y aplicaciones.
+13-algoritmos.pdf
+  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+    </item>
+    
     <item>
       <title>Lab 2</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/lab2/</link>
+      <link>https://jfuentes.github.io/classes/ch/unit3/lab2/</link>
       <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/lab2/</guid>
+      <guid>https://jfuentes.github.io/classes/ch/unit3/lab2/</guid>
       <description>Profesor: Joel Fuentes
 Ayudantes: Daniel López, Sebastián González
 Descripción En este laboratorio Ud. deberá implementar un programa en DPC++ que calcule el producto escalar (también conocido como inner product) entre dos vectores. El producto escalar es una operación algebraica que toma dos secuencias de números de igual dimensión (usualmente en la forma de vectores) y retorna un único número.
@@ -20,46 +52,14 @@ Considerando que existen dos vectores \(A\) y \(B\) en un espacio \({\displaysty
     </item>
     
     <item>
-      <title>Patrones Paralelos</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/patrones/</link>
-      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/patrones/</guid>
-      <description>En esta sesión revisamos los diferentes patrones de diseño para programación de algoritmos paralelos.
-12-patrones_algoritmos.pdf
-#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
-    </item>
-    
-    <item>
-      <title>HPC y Biometría (charla invitada)</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/hpc/</link>
-      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/hpc/</guid>
-      <description>Charla &amp;ldquo;Computación de Alto Rendimiento y Biometría.&amp;rdquo; dada por Dr. Ricardo Barrientos de la Universidad Católica del Maule.
-Resumen: Esta charla comenzará presentando una introducción al área de Computación de Alto Rendimiento y ejemplo de problemas que es capaz de resolver. También, se verá el desarrollo de aplicaciones utilizando GPU (Graphic Processing Unit), así como su arquitectura. Posteriormente, se presentarán prototipos tecnólogicos desarrollados en el Laboratorio LITRP (www.litrp.cl) que tienen relación con distintos métodos biométricos usados en plataformas de hardware de alto rendimiento y en particular en GPU, que permiten el uso de bases de datos de gran tamaño (decenas de millones de datos biométricos)</description>
-    </item>
-    
-    <item>
-      <title>Algoritmos y Aplicaciones</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/algoritmos/</link>
-      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/algoritmos/</guid>
-      <description>En esta sesión revisamos algunos ejemplos de algoritmos paralelos y aplicaciones.
-13-algoritmos.pdf
-#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
-    </item>
-    
-    <item>
       <title>Test 3</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/evaluacion/</link>
+      <link>https://jfuentes.github.io/classes/ch/unit3/evaluacion/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/evaluacion/</guid>
+      <guid>https://jfuentes.github.io/classes/ch/unit3/evaluacion/</guid>
       <description>Computación Heterogénea   ¿Cuál de las siguientes operaciones no corresponde a una función de reducción en DPC++? (10 puntos)
  maximum (max) plus (add) minimum (mul) parallel_for    Dado el siguiente código. Indicar el orden en el que son ejecutado cada uno de los kernels. (10 puntos)
-queue q; auto A = q.submit([&amp;amp;])(handler&amp;amp; h){});  auto C = q.submit([&amp;amp;])(handler&amp;amp; h){  h.depends_on(A); });  auto B = q.</description>
+queue q; auto A = q.submit([&amp;amp;])(handler&amp;amp; h){}); auto C = q.submit([&amp;amp;])(handler&amp;amp; h){ h.depends_on(A); }); auto B = q.submit([&amp;amp;])(handler&amp;amp; h){ h.depends_on(A); h.</description>
     </item>
     
   </channel>

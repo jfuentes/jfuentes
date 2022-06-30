@@ -2,91 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/dpcpp/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/intro/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/lab1/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/lab2/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/performance/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/compute_models/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/patterns/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/project/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/devcloud/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/hpc/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/frameworks/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/evaluation/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/algorithms/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit4/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/intro/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit4/performance/</loc>
     <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/oneapi/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/compute_models/</loc>
     <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/memoria/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/patterns/</loc>
     <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/evaluation/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/evaluation/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/evaluation/</loc>
-    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/pi__calculator/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit4/pi__calculator/</loc>
     <lastmod>2022-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/finalpoll/</loc>
-    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/cpu/</loc>
-    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/gpu/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/hpc/</loc>
     <lastmod>2019-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/gpu/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/memoria/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/frameworks/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/cpu/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/fpga/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/algorithms/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/oneapi/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit4/evaluation/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit4/finalpoll/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/gpu/</loc>
     <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.face.ubiobio.cl/~jfuentes/classes/hc/</loc>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/lab2/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/gpu/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/fpga/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/lab1/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit3/evaluation/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/project/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit1/evaluation/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/dpcpp/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/devcloud/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/unit2/evaluation/</loc>
+    <lastmod>2019-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfuentes.github.io/classes/hc/</loc>
     <lastmod>2022-04-12T00:00:00+00:00</lastmod>
   </url>
 </urlset>

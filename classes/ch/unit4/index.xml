@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>4. Rendimiento on Computación Heterogénea</title>
-    <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/</link>
+    <link>https://jfuentes.github.io/classes/ch/unit4/</link>
     <description>Recent content in 4. Rendimiento on Computación Heterogénea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jfuentes.github.io/classes/ch/unit4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rendimiento Computacional</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/rendimiento/</link>
+      <link>https://jfuentes.github.io/classes/ch/unit4/rendimiento/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/rendimiento/</guid>
+      <guid>https://jfuentes.github.io/classes/ch/unit4/rendimiento/</guid>
       <description>En esta sesión revisamos algunos conceptos sobre rendimiento computacional de algoritmos paralelos.
 14-rendimiento.pdf
-#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+  #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
+    </item>
+    
+    <item>
+      <title>Cálulo de Pi</title>
+      <link>https://jfuentes.github.io/classes/ch/unit4/calculador_pi/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfuentes.github.io/classes/ch/unit4/calculador_pi/</guid>
+      <description>Cálculo de Pi por integración númerica
+Matemáticamente, sabemos que: $$\int_{0}^{1}\frac{4.0}{(1+x^{2})}dx = \Pi $$
+Podemos aproximar la integral como una suma de \(n\) rectángulos: $$\sum_{i=0}^{n}F(x_{i})\Delta x \approx \Pi$$
+donde cada rectángulo tiene ancho \(\Delta x\) y alto \(F(x_{i})\) en la mitad del intervalo \(i\)
+   Podemos implementar el cálculo de Pi de la siguiente forma:
+Solución secuencial
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;omp.h&amp;gt; //Aquí usamos OpenMP para funciones de temporización static long num_steps = 100000000; double step; int main() { int i; double x,pi,sum=0.</description>
     </item>
     
     <item>
       <title>Test 4</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/evaluacion/</link>
+      <link>https://jfuentes.github.io/classes/ch/unit4/evaluacion/</link>
       <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/evaluacion/</guid>
+      <guid>https://jfuentes.github.io/classes/ch/unit4/evaluacion/</guid>
       <description>Computación Heterogénea   Indique cuándo es conveniente utilizar la Ley de Amdalh y cuándo es conveniente utilizar la Ley de Gustafson en el cálculo de rendimiento algorítmico.
-  Ingrese su respuesta    Asuma que un programa posee 30% de su código que no es paralelizable:
+  Ingrese su respuesta     Asuma que un programa posee 30% de su código que no es paralelizable:
 2.1 Calcular la aceleración usando la Ley de Amdahl usando 4 procesadores.
 2.2 Ahora asuma que el trabajo paralelo es fijo.</description>
     </item>
     
     <item>
-      <title>Cálulo de Pi</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/calculador_pi/</link>
-      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/calculador_pi/</guid>
-      <description>Cálculo de Pi por integración númerica
-Matemáticamente, sabemos que: $$\int_{0}^{1}\frac{4.0}{(1+x^{2})}dx = \Pi $$
-Podemos aproximar la integral como una suma de \(n\) rectángulos: $$\sum_{i=0}^{n}F(x_{i})\Delta x \approx \Pi$$
-donde cada rectángulo tiene ancho \(\Delta x\) y alto \(F(x_{i})\) en la mitad del intervalo \(i\)
-Podemos implementar el cálculo de Pi de la siguiente forma:
-Solución secuencial
-#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;omp.h&amp;gt; //Aquí usamos OpenMP para funciones de temporización static long num_steps = 100000000; double step; int main() {  int i;  double x,pi,sum=0.</description>
-    </item>
-    
-    <item>
       <title>Encuesta Final</title>
-      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/encuestaf/</link>
+      <link>https://jfuentes.github.io/classes/ch/unit4/encuestaf/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/encuestaf/</guid>
+      <guid>https://jfuentes.github.io/classes/ch/unit4/encuestaf/</guid>
       <description>¿Fueron las actividades del curso (clases, labs, talleres) útiles y atractivos? *  Nada útil
  1 2 3 4  Muy útil
 ¿Cómo valoraría el apoyo recibido del profesor y ayudantes? *  Nada útil
