@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>Computación Heterogénea</title>
+  <meta name="description" content="Programming Heterogeneous Arquitectures using Data Parallel C&#43;&#43;" />
+  <meta name="author" content="Joel Fuentes" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.96.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/~jfuentes/classes/ch/css/kitab.css" />
+
+  <script src="/~jfuentes/classes/ch/js/myFunctions.js"></script>
+  <script src="/~jfuentes/classes/ch/js/clipboard.min.js"></script>
+
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="/~jfuentes/classes/ch/"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all units"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Units
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit1/">
+            <ol>
+<li>Arquitecturas</li>
+</ol>
+
+          </a>
+          6 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/">
+            <ol start="2">
+<li>Modelos de Programación</li>
+</ol>
+
+          </a>
+          10 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/">
+            <ol start="3">
+<li>Algoritmos</li>
+</ol>
+
+          </a>
+          6 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/">
+            <ol start="4">
+<li>Rendimiento</li>
+</ol>
+
+          </a>
+          3 sesiones
+        </li>
+        
+      </ul>
+    </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Sessions"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        <ol start="2">
+<li>Modelos de Programación</li>
+</ol>
+
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp/">DPC++</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/lab1/">Lab 1</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/modelos_computo/">Modelos de Cómputo</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/proyecto/">Proyecto</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud/">DevCloud</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/frameworks/">Frameworks de Programación</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/oneapi/">Intro a OneAPI y DPC++</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/evaluacion/">Test 2</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/gpu/">GPU Computing (charla invitada)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+  
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; right: 1em"
+  ><div>
+  
+
+
+
+
+
+
+<span style="font-size: 0.9em;"><i
+    aria-label="home"
+    class="fas fa-home"
+  ></i
+  ></span>
+
+
+
+<span style="font-size: 0.9em;"> / <ol start="2">
+<li>Modelos de …</li></ol></span>
+
+
+
+<span style="font-size: 0.9em;"> / Test 2</span>
+
+</div>
+
+
+</small>
+  <h2>Test 2</h2>
+  <div class="rounded">
+    <h2 id="computación-heterogénea">Computación Heterogénea</h2>
+<ol>
+<li>
+<p>El modelo de cómputo SIMD hace referencia a: (5 puntos)</p>
+<ul>
+<li>Modelo en que un hilo procesa datos individuales</li>
+<li>Modelo en el que múltiples hilos procesan el mismo dato individual</li>
+<li>Modelo en el que hilos procesan múltiples datos a la vez</li>
+<li>Modelo en que múltiples hilos procesan datos individuales</li>
+</ul>
+</li>
+<li>
+<p>De acuerdo a la Taxonomía de Flynn. ¿A qué modelo corresponde el procesamiento encontrado en CPU multi-core? (5 puntos)</p>
+<ul>
+<li>SISD</li>
+<li>SIMD</li>
+<li>MISD</li>
+<li>MIMD</li>
+</ul>
+</li>
+<li>
+<p>En el lenguaje de programación CUDA para GPUs Nvidia. ¿Cuál es el propósito de la llamada cudaMalloc(&hellip;)? (5 puntos)</p>
+<ul>
+<li>Reservar memoria en el host</li>
+<li>Lanzar un kernel de ejecución</li>
+<li>Reservar memoria en el dispositivo GPU</li>
+<li>Copiar datos al dispositivo GPU</li>
+</ul>
+</li>
+<li>
+<p>En SYCL y DPC++ existen diferentes clases para la gestión de kernels y datos. Indique por cada una de las siguientes clases su finalidad: (12 puntos)</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th style="text-align:center">SRAM</th>
+<th style="text-align:center">DRAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sycl::device</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+<tr>
+<td>sycl::queue</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+<tr>
+<td>sycl::buffer</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+<tr>
+<td>sycl::handler</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+<tr>
+<td>sycl::accessor</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+<tr>
+<td>sycl::range</td>
+<td style="text-align:center">☐</td>
+<td style="text-align:center">☐</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Dado el siguiente código en DPC++. ¿Qué tipos de accessors deberían ser definidos para A y B? (10 puntos)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    queue q;
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v1(N);
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> v2(N);
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>    buffer buff1(v1);
+</span></span><span style="display:flex;"><span>    buffer buff2(v2);
+</span></span><span style="display:flex;"><span>    q.submit([<span style="color:#f92672">&amp;</span>](handler<span style="color:#f92672">&amp;</span> h){
+</span></span><span style="display:flex;"><span>        accessor A(buff1, h, XXXXX);
+</span></span><span style="display:flex;"><span>        accessor B(buff2, h, XXXXX);
+</span></span><span style="display:flex;"><span>        h.parallel_for(N, [<span style="color:#f92672">=</span>](<span style="color:#66d9ef">auto</span> i){
+</span></span><span style="display:flex;"><span>            B[i] <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> A[i];
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }).wait();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>A: read_write y B: read_write</li>
+<li>A: read_only y B: read_only</li>
+<li>A: read_only y B: write_only</li>
+<li>A: write_only y B: write_only</li>
+</ul>
+</li>
+<li>
+<p>Dada la definición del siguiente kernel. ¿Cuántos hilos se crearán para la ejecución en paralelo del parallel_for? (10 puntos)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>h.parallel_for(nd_range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>(range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>({<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">2</span>}), range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>({<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>})), [<span style="color:#f92672">=</span>](nd_item<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span> item){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">auto</span> global_ <span style="color:#f92672">=</span> item.get_global_id();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">auto</span> local_id <span style="color:#f92672">=</span> item.get_local_id();
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ul>
+<li>48</li>
+<li>4</li>
+<li>40</li>
+<li>3</li>
+<li>20</li>
+</ul>
+</li>
+<li>
+<p>Dada la definición del siguiente kernel. ¿Cuántos grupos de trabajo (work-group) se definen para el parallel_for? (10 puntos)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>h.parallel_for(nd_range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>(range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>({<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">2</span>}), range<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span>({<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>})), [<span style="color:#f92672">=</span>](nd_item<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">&gt;</span> item){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">auto</span> global_ <span style="color:#f92672">=</span> item.get_global_id();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">auto</span> local_id <span style="color:#f92672">=</span> item.get_local_id();
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ul>
+<li>40</li>
+<li>3</li>
+<li>8</li>
+<li>1</li>
+<li>5</li>
+</ul>
+</li>
+<li>
+<p>Charla GPU Computing: ¿A qué corresponden los ASICs en las nuevas GPUs de Nvidia? (5 puntos)</p>
+<ul>
+<li>Hardware especializado para ciertas tareas específicas</li>
+<li>Hardware disponible para ejecutar cómputo de propósito general</li>
+<li>Nueva caché L1 programable disponible en Raytracing y Tensor cores</li>
+<li>Streaming Multiprocesors disponibles en el chip</li>
+</ul>
+</li>
+<li>
+<p>Charla GPU Computing: Explique a qué se refiere el término Multi-chip-module en GPUs modernas (8 puntos)</p>
+<hr>
+<pre><code> Ingrese aquí su respuesta
+</code></pre>
+<hr>
+</li>
+</ol>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="/~jfuentes/classes/ch/unit2/gpu/"
+    title="GPU Computing (charla invitada)"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="/~jfuentes/classes/ch/unit2/oneapi/"
+    title="Intro a OneAPI y DPC&#43;&#43;"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <a href="#" class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      aria-label="Scroll to top"
+    ></i>
+  </a>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "http:\/\/www.face.ubiobio.cl\/~jfuentes\/classes\/ch\/unit2\/evaluacion\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Universidad del Bío-Bío, Chile
+      &middot;
+      2021
+    </span>
+  </div>
+
+    <div class="row">
+      <div class="column" style="
+      width: 100%;">Patrocinadores:</div>
+      <div class="column" style="
+      width: 120px;
+      margin-left: 65px;"><img src="http://www.face.ubiobio.cl/~jfuentes/classes/ch/images/ici_web.png" height="40%" ></div>
+      <div class="column" style="
+      width: 120px;
+      margin-left: 10px;"><img src="http://www.face.ubiobio.cl/~jfuentes/classes/ch/images/intel_web.png" height="20%" ></div>
+    </div> 
+
+  </footer>
+
+  </body>
+</html>

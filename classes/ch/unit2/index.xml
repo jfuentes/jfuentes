@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. Modelos de Programación on Computación Heterogénea</title>
+    <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/</link>
+    <description>Recent content in 2. Modelos de Programación on Computación Heterogénea</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DPC&#43;&#43;</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp/</guid>
+      <description>Enlaces con material de interés:
+ Libro Data Parallel C++ Ejemplos en C++ Ejemplos de DPC++  Siempre utilizar en el código:
+ #include &amp;lt;CL/sycl.hpp&amp;gt;  Using namespace sycl; Pasos de un programa en DPC++
+ Crear cola de dispositivo Crear buffers Encolar kernel(s) Crear accessadores Especificar función del kernel  1. Gestión de Memoria  Malloc Para gestionar la memoria utilizar enfoque basado en punteros, más específicamente Malloc. Por ejemplo, crear locación de memoria para compartir:</description>
+    </item>
+    
+    <item>
+      <title>Lab 1</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/lab1/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/lab1/</guid>
+      <description>Profesor: Joel Fuentes
+Ayudantes: Daniel López, Sebastián González
+Descripción En este laboratorio Ud. deberá implementar un programa en DPC++ que contenga uno o más kernels que realicen operaciones sobre vectores. El objetivo es que las operaciones en vectores se ejecuten en paralelo en un acelerador (CPU multi-core, GPU o FPGA). Considere que existen 3 vectores A, B y C. Las operaciones a realizar en paralelo sobre estos vectores son:
+ Asignar valores consecutivos incrementales al vector A.</description>
+    </item>
+    
+    <item>
+      <title>Modelos de Cómputo</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/modelos_computo/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/modelos_computo/</guid>
+      <description>En esta sesión revisamos los diferentes modelos de cómputo usados en la computación moderna. Comenzamos con la taxonomía de Flynn, hasta la evolución a modelos usados en arquitecturas actuales.
+7-modelos_computo.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Proyecto</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/proyecto/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/proyecto/</guid>
+      <description>Propagación de calor en metales La ecuación de Laplace es una ecuación parcial de segundo orden que es usada en muchos problemas en física, incluídos electroestática, flujo de fluídos, temperatura, etc.
+En su forma más básica puede ser expresada como: $$\nabla^2f(x,y)=0 $$
+En particular, para resolver problemas de simulación y propagación de temperatura se ha propuesto la iteración de Jacobi. Esta iteración establece que la ecuación de Laplace aplicada en una matriz de puntos, un punto de esta matriz es el promedio de sus vecinos.</description>
+    </item>
+    
+    <item>
+      <title>DevCloud</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud/</guid>
+      <description>Configuración VS Code + DevCloud La guía paso a paso de conexión a DevCloud con VS Code está disponible aquí, en inglés.
+ Prepara la conexión SSH  Descarga el archivo de configuración automatizada correspondiente a tu usuario, disponible en el link de la guía. Abre una terminal que soporte bash en la carpeta donde se descargó el archivo y ejecuta el siguiente comando: bash setup-devcloud-access-XXXXX.txt, donde XXXXX es tu ID de usuario.</description>
+    </item>
+    
+    <item>
+      <title>Frameworks de Programación</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/frameworks/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/frameworks/</guid>
+      <description>En esta sesión estudiamos dos de los principales frameworks para la programación de arquitecturas modernas: CUDA y SYCL.
+8-frameworks.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Intro a OneAPI y DPC&#43;&#43;</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/oneapi/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/oneapi/</guid>
+      <description>Introducción a OneAPI y el entorno de desarrollo DevCloud.
+9-devcloud.pdf
+Introducción a DPC++.
+11-dpc++.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Test 2</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/evaluacion/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/evaluacion/</guid>
+      <description>Computación Heterogénea   El modelo de cómputo SIMD hace referencia a: (5 puntos)
+ Modelo en que un hilo procesa datos individuales Modelo en el que múltiples hilos procesan el mismo dato individual Modelo en el que hilos procesan múltiples datos a la vez Modelo en que múltiples hilos procesan datos individuales    De acuerdo a la Taxonomía de Flynn. ¿A qué modelo corresponde el procesamiento encontrado en CPU multi-core?</description>
+    </item>
+    
+    <item>
+      <title>GPU Computing (charla invitada)</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/gpu/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/gpu/</guid>
+      <description>Charla &amp;ldquo;GPU Computing: una mirada al pasado, presente y futuro&amp;rdquo; dada por Dr. Cristóbal Navarro de la Universidad Austral de Chile.
+2021-05-UBB-Charla-GPU-Computing.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+  </channel>
+</rss>

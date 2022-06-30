@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heterogeneous Computing</title>
+    <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/</link>
+    <description>Recent content on Heterogeneous Computing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.face.ubiobio.cl/~jfuentes/classes/hc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DPC&#43;&#43;</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/dpcpp/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/dpcpp/</guid>
+      <description>Links:
+  Data Parallel C++ Book
+  Examples in C++
+  Examples in DPC++
+  Always use in code:
+#include &amp;lt;CL/sycl.hpp&amp;gt; Using namespace sycl; 1. Memory Management  Malloc To manage memory use a pointer-based approach, more specifically Malloc. For example, create memory location to share:
+char *example = malloc_shared&amp;lt;char&amp;gt;(variable,queue); In SYCL you can use 3 types: malloc_host, malloc_shared and malloc_device:
+int* host_array = malloc_host(N, Q); int* shared_array = malloc_shared(N, Q); int* device_array = malloc_device(N, Q); Characteristics:</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/intro/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/intro/</guid>
+      <description>Presentation of the course and its syllabus, semester schedule, and administrative information.
+1-intro.pdf
+Overview of heterogeneous architectures, their history and evolution over time.
+2-intro_architectures.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Lab 1</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/lab1/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/lab1/</guid>
+      <description>Professor: Joel Fuentes
+Assistants: Daniel López, Sebastián González
+Description In this lab you will implement a DPC++ program that contains one or more kernels that perform operations on vectors. The goal is for vector operations to be run in parallel on an accelerator (multi-core CPU, GPU, or FPGA).
+Consider that there are 3 vectors A,B and C. The operations to be carried out in parallel on these vectors are:
+  Assign incremental consecutive values to vector A.</description>
+    </item>
+    
+    <item>
+      <title>Lab 2</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/lab2/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/lab2/</guid>
+      <description>Professor: Joel Fuentes
+Assistants: Daniel López, Sebastián González
+Description In this laboratory you must implement a program in DPC ++ that calculates the dot product (also known as the internal product) between two vectors. The dot product is an algebraic operation that takes two sequences of numbers of equal dimension (usually in the form of vectors) and returns a single number.
+Considering that there are two vectors A and B in a space (R^n) , the dot product is realized as a matrix product as follows :</description>
+    </item>
+    
+    <item>
+      <title>Computational Performance</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/performance/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/performance/</guid>
+      <description>In this session we review concepts about computational performance in parallel algorithms.
+14-performance.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Compute Models</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/compute_models/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/compute_models/</guid>
+      <description>In this session we review different compute models used in modern computer machines. We begin with the Flynn&amp;rsquo;s taxonomy, and look at the evolution of models used in modern architectures.
+7-compute_models.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Parallel Patterns</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/patterns/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/patterns/</guid>
+      <description>In this session we review different parallel programming patterns to implement parallel algorithms.
+12-parallel_patterns.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/project/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/project/</guid>
+      <description>Heat propagation in metals Laplace&amp;rsquo;s equation is a second-order partial differential equation used to solve problems in multiple branches of science such as electrostatics, fluid dynamics, heat conduction, etc.
+In its most basic form it can be expressed as follows: $$\nabla^2f(x,y)=0 $$
+In particular, to solve propagation and simulation problems, the Jacobi iteration is proposed. This iteration establishes that the Laplace equation is applied in a matrix of points, with each point being an average of its adjacent points.</description>
+    </item>
+    
+    <item>
+      <title>DevCloud</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/devcloud/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/devcloud/</guid>
+      <description>VS Code + DevCloud Configuration The step-by-step guide to connect to DevCloud using VS Code is available here.
+ Setting up the SSH Config  Download the auto config file customized for your account, available on the guide&amp;rsquo;s website. Open a terminal that supports bash in the location of the downloaded file and execute the following command: bash setup-devcloud-access-XXXXX.txt, where XXXXX is your user&amp;rsquo;s ID. For safety reasons, remove the downloaded file.</description>
+    </item>
+    
+    <item>
+      <title>HPC and Biometrics (invited talk)</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/hpc/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/hpc/</guid>
+      <description>Talk titled &amp;ldquo;High-Performance Computing and Biometrics&amp;rdquo; given by Dr. Ricardo Barrientos from the Universidad Católica del Maule.
+Charla-UBB-HPC-Biometria.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Programming Frameworks</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/frameworks/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/frameworks/</guid>
+      <description>In this session we study two of the main programming frameworks for modern architectures: CUDA and SYCL.
+8-frameworks.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Test 4</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/evaluation/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/evaluation/</guid>
+      <description>Heterogeneous Computing   To calculate the theoretical performance of a parallel algorithm, indicate when it is convenient to use Amdalh&amp;rsquo;s Law and when it is convenient to use Gustafson&amp;rsquo;s Law.
+  Enter your answer here    Assume that in a computer program 30% of its code is not parallelizable:
+2.1 Calculate the speedup with 4 processors using Amdahl&amp;rsquo;s Law.
+2.2 Now, assume that the parallel work is fixed.</description>
+    </item>
+    
+    <item>
+      <title>Algorithms and Applications</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/algorithms/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/algorithms/</guid>
+      <description>In this session we review some examples of parallel algorithms and applications.
+13-algorithms.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Intro to OneAPI and DPC&#43;&#43;</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/oneapi/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/oneapi/</guid>
+      <description>Introduction to OneAPI and development framework DevCloud.
+9-devcloud.pdf
+Introduction to DPC++.
+11-dpc++.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Memory Hierarchy</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/memoria/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/memoria/</guid>
+      <description>In this session we review fundamental concepts about computer system memories. We focus on SRAM and DRAM memories that are part of the memory hierarchy of modern processors and accelerators.
+3-memory.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Test 1</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/evaluation/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/evaluation/</guid>
+      <description>Heterogeneous computing   Moore&amp;rsquo;s law refers to: (7 points)
+ The doubling of the frequency in processors from time to time The linear increase in the number of cores in a processor The doubling of the number of transistors in processors from time to time The increase in power generated by a processor from time to time    The number of accesses per unit of time is called: (7 points)</description>
+    </item>
+    
+    <item>
+      <title>Test 2</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/evaluation/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/evaluation/</guid>
+      <description>Heterogeneous computing   The SIMD computational model refers to: (5 points)
+ Model in which a thread processes individual data Model in which multiple threads process the same individual data Model in which mutiple threads process multiple data at the same time Model in which multiple threads process individual data    According to Flynn&amp;rsquo;s Taxonomy. What model does the processing found in multi-core CPUs correspond to? (5 points)</description>
+    </item>
+    
+    <item>
+      <title>Test 3</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/evaluation/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit3/evaluation/</guid>
+      <description>Heterogeneous computing   Which of the following operations does not correspond to a reduction function in DPC++? (10 points)
+ maximum (max) plus (add) minimum (mul) parallel_for    Given the following code. Indicate the order in which each kernel is executed: (10 points)
+queue q; auto A = q.submit([&amp;amp;])(handler&amp;amp; h){});  auto C = q.submit([&amp;amp;])(handler&amp;amp; h){  h.depends_on(A); });  auto B = q.submit([&amp;amp;])(handler&amp;amp; h){  h.depends_on(A);  h.</description>
+    </item>
+    
+    <item>
+      <title>Pi Calculator</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/pi__calculator/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/pi__calculator/</guid>
+      <description>Calculating Pi by numerical integration
+Mathematically, we know that: $$\int_{0}^{1}\frac{4.0}{(1+x^{2})}dx = \Pi $$
+We can approximate the integral as a sum of n rectangles: $$\sum_{i=0}^{n}F(x_{i})\Delta x \approx \Pi$$
+Where each rectangle has width \(\Delta x\) and height \(F(x_{i})\) at the middle of interval \(i\)
+We can implement the calculation of Pi as follows:
+Serial Code
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;omp.h&amp;gt; //Here we use OpenMP for timing functions static long num_steps = 100000000; double step; int main() {  int i;  double x,pi,sum=0.</description>
+    </item>
+    
+    <item>
+      <title>Final Poll</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/finalpoll/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/finalpoll/</guid>
+      <description>¿Were the course activities (classes, labs, workshops) useful and engaging? *  Nothing useful
+ 1 2 3 4  Very useful
+5.How would you rate the support received from the teacher and assistants? *
+Nothing useful
+ 1 2 3 4  Very useful
+Did the material covered in the course have any impact on your interest in High Performance Computing? *  My interest decreased
+ 1 2 3 4  Increased my interest</description>
+    </item>
+    
+    <item>
+      <title>Multi-core CPU</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/cpu/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/cpu/</guid>
+      <description>In this session we review the multi-core CPU architecture. Advantages and main challenges are presented.
+4-multicore_cpu.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>GPU Computing (invited talk)</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/gpu/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit2/gpu/</guid>
+      <description>Talk titled &amp;ldquo;GPU Computing: una mirada al pasado, presente y futuro&amp;rdquo; given by Dr. Cristóbal Navarro from the Universidad Austral de Chile.
+2021-05-UBB-Charla-GPU-Computing.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/gpu/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/gpu/</guid>
+      <description>In this session we review the GPU architecture, with special focus on hardware products from Nvidia, AMD and Intel. Their advantages, main features and challenges are presented.
+5-gpu.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>FPGA</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/fpga/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit1/fpga/</guid>
+      <description>In this session we review the FPGA architecture. Advantages and main features and challenges are presented.
+6-fpga.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>Computación Heterogénea</title>
+  <meta name="description" content="Programming Heterogeneous Arquitectures using Data Parallel C&#43;&#43;" />
+  <meta name="author" content="Joel Fuentes" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.96.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/~jfuentes/classes/ch/css/kitab.css" />
+
+  <script src="/~jfuentes/classes/ch/js/myFunctions.js"></script>
+  <script src="/~jfuentes/classes/ch/js/clipboard.min.js"></script>
+
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="/~jfuentes/classes/ch/"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all units"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Units
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit1/">
+            <ol>
+<li>Arquitecturas</li>
+</ol>
+
+          </a>
+          6 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/">
+            <ol start="2">
+<li>Modelos de Programación</li>
+</ol>
+
+          </a>
+          10 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit3/">
+            <ol start="3">
+<li>Algoritmos</li>
+</ol>
+
+          </a>
+          6 sesiones
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit4/">
+            <ol start="4">
+<li>Rendimiento</li>
+</ol>
+
+          </a>
+          3 sesiones
+        </li>
+        
+      </ul>
+    </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Sessions"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        <ol start="2">
+<li>Modelos de Programación</li>
+</ol>
+
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp/">DPC++</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/lab1/">Lab 1</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/modelos_computo/">Modelos de Cómputo</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/proyecto/">Proyecto</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud/">DevCloud</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/frameworks/">Frameworks de Programación</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/oneapi/">Intro a OneAPI y DPC++</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/evaluacion/">Test 2</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/gpu/">GPU Computing (charla invitada)</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+  
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; right: 1em"
+  ><div>
+  
+
+
+
+
+
+
+<span style="font-size: 0.9em;"><i
+    aria-label="home"
+    class="fas fa-home"
+  ></i
+  ></span>
+
+
+
+<span style="font-size: 0.9em;"> / <ol start="2">
+<li>Modelos de …</li></ol></span>
+
+
+
+<span style="font-size: 0.9em;"> / Lab 1</span>
+
+</div>
+
+
+</small>
+  <h2>Lab 1</h2>
+  <div class="rounded">
+    <p><strong>Profesor</strong>: Joel Fuentes</p>
+<p><strong>Ayudantes:</strong> Daniel López, Sebastián González</p>
+<h2 id="descripción">Descripción</h2>
+<p>En este laboratorio Ud. deberá implementar un programa en DPC++ que contenga uno o más
+kernels que realicen operaciones sobre vectores. El objetivo es que las operaciones en vectores se
+ejecuten en paralelo en un acelerador (CPU multi-core, GPU o FPGA).
+Considere que existen 3 vectores A, B y C. Las operaciones a realizar en paralelo sobre estos
+vectores son:</p>
+<ol>
+<li>Asignar valores consecutivos incrementales al vector A.</li>
+<li>Asignar valores consecutivos decrementales al vector B.</li>
+<li>Realizar operaciones aritméticas entre A y B guardando el resultado en C. Si el índice de los
+vectores es par se debe realizar suma, si el índice es impar se debe realizar resta.</li>
+</ol>
+<p>La Figura 1 muestra un ejemplo de los vectores A, B y C luego de realizar las operaciones
+descritas anteriormentes. Por ejemplo, la operación en el índice 0 corresponde a la suma C[0] =
+A[0] + B[0] resultando 9. La operación en el índice 1 corresponde a la resta C[1] = A[1] 􀀀 B[1]
+resultando -7.
+Para la implementación del kernel se recomienda el uso de buffers, accessors y parallel_for. En
+el siguiente link encontrará una Wiki con detalles sobre su uso en DPC++: <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp">http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/dpcpp</a></p>
+<p align="center">
+  <img src="../../images/vectors.png" style="height:40%;width:40%">
+</p>
+<center>Figura 1: Ejemplo vector A, B y C.</center>
+<p>Para probar su implementación, se recomienda ejecutarlo en servidores Devcloud. En el siguiente
+link encontrará una Wiki con detalles sobre la configuración del entorno de desarrollo Devcloud y
+compilación con DPC++: <a href="http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud">http://www.face.ubiobio.cl/~jfuentes/classes/ch/unit2/devcloud</a></p>
+<p><strong>Solución:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">/*********************************
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">* Lab 1 - Computación Heterogénea 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">* Primavera 2021
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">**********************************/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;CL/sycl.hpp&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">constexpr</span> <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> sycl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Cola para la ejecución del dispositivo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    queue q;
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Device : &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;&lt;</span> q.get_device().get_info<span style="color:#f92672">&lt;</span>info<span style="color:#f92672">::</span>device<span style="color:#f92672">::</span>name<span style="color:#f92672">&gt;</span>()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Declaracion de buffer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> A(N);
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> B(N);
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> C(N);	
+</span></span><span style="display:flex;"><span>    buffer buffA(A);
+</span></span><span style="display:flex;"><span>    buffer buffB(B);
+</span></span><span style="display:flex;"><span>    buffer buffC(C);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Envío del kernel al dispositivo de hardware
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    q.submit([<span style="color:#f92672">&amp;</span>](handler<span style="color:#f92672">&amp;</span> h){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Agrega tu código aquí
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        accessor a(buffA, h, read_write);
+</span></span><span style="display:flex;"><span>        accessor b(buffB, h, read_write);
+</span></span><span style="display:flex;"><span>        accessor c(buffC, h, write_only);
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        h.parallel_for(N,[<span style="color:#f92672">=</span>](<span style="color:#66d9ef">auto</span> i) {
+</span></span><span style="display:flex;"><span>            a[i] <span style="color:#f92672">=</span> i;
+</span></span><span style="display:flex;"><span>            b[i] <span style="color:#f92672">=</span> N <span style="color:#f92672">-</span> i;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (i<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>                c[i] <span style="color:#f92672">=</span> a[i] <span style="color:#f92672">+</span> b[i];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>    
+</span></span><span style="display:flex;"><span>                c[i] <span style="color:#f92672">=</span> a[i] <span style="color:#f92672">-</span> b[i];
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }).wait();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;A: &#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i<span style="color:#f92672">++</span>) 
+</span></span><span style="display:flex;"><span>		    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> A[i] <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;B: &#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i<span style="color:#f92672">++</span>) 
+</span></span><span style="display:flex;"><span>		    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> B[i] <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;C: &#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i<span style="color:#f92672">++</span>) 
+</span></span><span style="display:flex;"><span>		    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> C[i] <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="/~jfuentes/classes/ch/unit2/modelos_computo/"
+    title="Modelos de Cómputo"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="/~jfuentes/classes/ch/unit2/dpcpp/"
+    title="DPC&#43;&#43;"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <a href="#" class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      aria-label="Scroll to top"
+    ></i>
+  </a>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "http:\/\/www.face.ubiobio.cl\/~jfuentes\/classes\/ch\/unit2\/lab1\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Universidad del Bío-Bío, Chile
+      &middot;
+      2021
+    </span>
+  </div>
+
+    <div class="row">
+      <div class="column" style="
+      width: 100%;">Patrocinadores:</div>
+      <div class="column" style="
+      width: 120px;
+      margin-left: 65px;"><img src="http://www.face.ubiobio.cl/~jfuentes/classes/ch/images/ici_web.png" height="40%" ></div>
+      <div class="column" style="
+      width: 120px;
+      margin-left: 10px;"><img src="http://www.face.ubiobio.cl/~jfuentes/classes/ch/images/intel_web.png" height="20%" ></div>
+    </div> 
+
+  </footer>
+
+  </body>
+</html>

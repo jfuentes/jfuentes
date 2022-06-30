@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4. Performance on Heterogeneous Computing</title>
+    <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/</link>
+    <description>Recent content in 4. Performance on Heterogeneous Computing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Performance</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/performance/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/performance/</guid>
+      <description>In this session we review concepts about computational performance in parallel algorithms.
+14-performance.pdf
+#the-canvas {border: 1px solid black;direction: ltr;width: 100%;height: auto;display: none;}#paginator {display: none;text-align: center;margin-bottom: 10px;}#loadingWrapper {display: none;justify-content: center;align-items: center;width: 100%;height: 350px;}#loading {display: inline-block;width: 50px;height: 50px;border: 3px solid #d2d0d0;;border-radius: 50%;border-top-color: #383838;animation: spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;}@keyframes spin {to { -webkit-transform: rotate(360deg); }}@-webkit-keyframes spin {to { -webkit-transform: rotate(360deg); }}PreviousNext&amp;nbsp; &amp;nbsp;Page:  / window.</description>
+    </item>
+    
+    <item>
+      <title>Test 4</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/evaluation/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/evaluation/</guid>
+      <description>Heterogeneous Computing   To calculate the theoretical performance of a parallel algorithm, indicate when it is convenient to use Amdalh&amp;rsquo;s Law and when it is convenient to use Gustafson&amp;rsquo;s Law.
+  Enter your answer here    Assume that in a computer program 30% of its code is not parallelizable:
+2.1 Calculate the speedup with 4 processors using Amdahl&amp;rsquo;s Law.
+2.2 Now, assume that the parallel work is fixed.</description>
+    </item>
+    
+    <item>
+      <title>Pi Calculator</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/pi__calculator/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/pi__calculator/</guid>
+      <description>Calculating Pi by numerical integration
+Mathematically, we know that: $$\int_{0}^{1}\frac{4.0}{(1+x^{2})}dx = \Pi $$
+We can approximate the integral as a sum of n rectangles: $$\sum_{i=0}^{n}F(x_{i})\Delta x \approx \Pi$$
+Where each rectangle has width \(\Delta x\) and height \(F(x_{i})\) at the middle of interval \(i\)
+We can implement the calculation of Pi as follows:
+Serial Code
+#include &amp;lt;stdio.h&amp;gt;#include &amp;lt;omp.h&amp;gt; //Here we use OpenMP for timing functions static long num_steps = 100000000; double step; int main() {  int i;  double x,pi,sum=0.</description>
+    </item>
+    
+    <item>
+      <title>Final Poll</title>
+      <link>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/finalpoll/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.face.ubiobio.cl/~jfuentes/classes/hc/unit4/finalpoll/</guid>
+      <description>¿Were the course activities (classes, labs, workshops) useful and engaging? *  Nothing useful
+ 1 2 3 4  Very useful
+5.How would you rate the support received from the teacher and assistants? *
+Nothing useful
+ 1 2 3 4  Very useful
+Did the material covered in the course have any impact on your interest in High Performance Computing? *  My interest decreased
+ 1 2 3 4  Increased my interest</description>
+    </item>
+    
+  </channel>
+</rss>
